@@ -1,3 +1,14 @@
-# Sentiment-Analysis
+# IMDB Movie Review Sentiment Classifier
 
-This project implements a Sentiment Analysis model using a Simple Recurrent Neural Network (RNN) to classify movie reviews from the IMDB dataset as either positive or negative. The dataset contains 50,000 movie reviews, split equally into training and test sets. Text preprocessing techniques such as tokenization and padding were applied to convert the reviews into sequences suitable for the RNN. The RNN model was trained on these sequences to learn temporal dependencies in the text, allowing it to capture contextual sentiment. The model was compiled with categorical cross-entropy loss and optimized using Adam. The resulting model provides insights into how sequential neural networks can be applied for text-based sentiment analysis tasks.
+## Overview
+This project implements a sentiment analysis model using a pre-trained Simple RNN model on the IMDB movie reviews dataset. The model classifies user-provided movie reviews as either positive or negative based on the sentiment expressed in the text. The model is integrated into a user-friendly web interface using Streamlit.
+
+## Features
++ **Sentiment** Prediction: Classifies movie reviews as either positive or negative sentiment.
++ **User Input**: Users can input any movie review into the interface, and the application will return the sentiment along with the prediction score.
++ **Interactive Web Interface**: Built using Streamlit for ease of use and accessibility.
+
+## Technologies Used
++ **TensorFlow/Keras**: For loading and running the pre-trained Simple RNN model.
++ **IMDB Dataset**: A dataset of 50,000 movie reviews used for training the sentiment analysis model.
++ **Streamlit**: For creating the web application that allows user interaction with the model.
